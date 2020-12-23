@@ -206,9 +206,7 @@ footer li a {
 }
 
 .photo_restaurant {
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  size: 50%;
 }
 
 .menu {
@@ -227,6 +225,7 @@ footer li a {
   border-radius: 25px;
   margin: auto;
   margin-top: 15px;
+  text-align: center;
 }
 
 .menu-order {

@@ -167,8 +167,7 @@ footer{
 //#######################//
 //##### Restaurant#######//
 .photo_restaurant{
-    height:250px;
-    object-fit: cover;
+    size:50%;
     
 }
 .menu{
@@ -176,6 +175,7 @@ footer{
   text-align:center;
   .menu-part{
   Font-family:'Roboto';
+  
   .menu-part-dishes{
       height: 70px;
       width: 345px;
@@ -183,7 +183,7 @@ footer{
       border-radius:25px;
       margin:auto;
       margin-top:15px;
-      
+      text-align:center;
   }    
   }
   
