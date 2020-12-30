@@ -1,0 +1,15 @@
+.btn{
+    background-color:$secondary-color;
+    font-family: 'Roboto';
+    color:white;
+    height:50px;
+    width:220px;
+    text-align:center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px $primary-color;
+    line-height:50px;
+    margin:auto;
+    &.btn-explore{
+    margin-top:40px;
+    }
+}
