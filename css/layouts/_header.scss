@@ -1,17 +1,19 @@
 header{
     height:65px;
-    // width:375px;
-    margin:40px 30% 40px 30%;
-    img{
-        padding:25px 0 0 75px;
-    }
-    .header__restaurant{
-        display:flex;
-        justify-content: center;
-        margin-right:200px;
+    padding:40px 0;
+}
+.header__restaurant{
+    display:flex;
+    justify-content: center;
+    padding-right:38px;
+    .logo{
+        padding:0px 0 0 20px;
     }
     .arrow{
-        padding: 10px 200px 20px 5px;
-    }
-    
+    padding: 10px 0 20px 5px;
+}
+     
+}        
+.logo{
+    text-align:center;
 }

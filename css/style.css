@@ -4,44 +4,63 @@ body {
 }
 
 .btn {
-  background-color: #FF79DA;
+  background-color: #9356dc;
   font-family: 'Roboto';
+  font-size: 1.4rem;
+  font-weight: bold;
   color: white;
   height: 50px;
   width: 220px;
-  text-align: center;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 1px 10px #9356DC;
-          box-shadow: 1px 1px 10px #9356DC;
-  line-height: 50px;
-  margin: auto;
+  -webkit-box-shadow: 1px 1px 10px #FF79DA;
+          box-shadow: 1px 1px 10px #FF79DA;
+  border: none;
 }
 
 .btn.btn-explore {
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(147, 86, 220, 0.8);
+  -webkit-box-shadow: 5px 5px 15px #FF79DA;
+          box-shadow: 5px 5px 15px #FF79DA;
+}
+
+.btn-command {
   margin-top: 40px;
 }
 
 header {
   height: 65px;
-  margin: 40px 30% 40px 30%;
+  padding: 40px 0;
 }
 
-header img {
-  padding: 25px 0 0 75px;
-}
-
-header .header__restaurant {
+.header__restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 200px;
+  padding-right: 38px;
 }
 
-header .arrow {
-  padding: 10px 200px 20px 5px;
+.header__restaurant .logo {
+  padding: 0px 0 0 20px;
+}
+
+.header__restaurant .arrow {
+  padding: 10px 0 20px 5px;
+}
+
+.logo {
+  text-align: center;
 }
 
 footer {
@@ -52,9 +71,8 @@ footer {
   line-height: 30px;
 }
 
-footer .logo__footer {
-  font-family: 'Shrikhand';
-  font-size: 2.5rem;
+footer img {
+  width: 120px;
   padding-left: 40px;
 }
 
@@ -292,7 +310,7 @@ input::placeholder {
 }
 
 .menu .menu-part .menu-part-text {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid #99E2D0;
   text-transform: uppercase;
   position: relative;
 }
@@ -307,9 +325,5 @@ input::placeholder {
   margin: auto;
   margin-top: 15px;
   text-align: center;
-}
-
-.btn-command {
-  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

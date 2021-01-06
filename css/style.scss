@@ -148,6 +148,7 @@ input::placeholder{
             &:hover{
                 color:$primary-color; 
                 
+                
             }
         }
     }
@@ -169,30 +170,26 @@ input::placeholder{
   border-radius:50px 50px 0 0;
   position: relative;
   
-  .menu-part{
-  Font-family:'Roboto';
-  display:flex;
-  flex-wrap:wrap;
-  .menu-part-text{
-      border-bottom:2px solid black;
-      text-transform: uppercase;
-    position: relative;
-  }
-  .menu-part-dishes{
-      height: 70px;
-      width: 345px;
-      background-color:$bg-card;
-      box-shadow:1px 1px 5px;
-      border-radius:25px;
-      margin:auto;
-      margin-top:15px;
-      text-align:center;
-     
-  }    
+    .menu-part{
+    Font-family:'Roboto';
+    display:flex;
+    flex-wrap:wrap;
+        .menu-part-text{
+        border-bottom:3px solid $tertiary-color;
+        
+        text-transform: uppercase;
+        position: relative;
+        }
+        .menu-part-dishes{
+        height: 70px;
+        width: 345px;
+        background-color:$bg-card;
+        box-shadow:1px 1px 5px;
+        border-radius:25px;
+        margin:auto;
+        margin-top:15px;
+        text-align:center;
+        }    
+    }
 }
-}
-.btn-command{
-    margin-top:40px;
-}
-  
 
