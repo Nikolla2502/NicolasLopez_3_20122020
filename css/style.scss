@@ -162,23 +162,39 @@ input::placeholder{
     
     
 }
-.menu{
+.place{
   Font-family:'Shrikhand';
   height: 1200px;
   text-align:center;
   background-color:$bg-color;
   border-radius:50px 50px 0 0;
   position: relative;
-  
-    .menu-part{
+  bottom:40px;
+  border-radius:40px 40px 0 0;
+    .place-name{
+        padding-top:5%;
+        font-size:1.5rem;
+        .fa-heart{
+            padding-left:60px;
+            padding-right:10px;
+        }
+    }
+    .menu{
     Font-family:'Roboto';
     display:flex;
     flex-wrap:wrap;
-        .menu-part-text{
-        border-bottom:3px solid $tertiary-color;
-        
-        text-transform: uppercase;
-        position: relative;
+    margin-top:30px;
+        .menu-part{
+        font-weight: 600;
+        margin-left:5%;
+        }
+        .menu-part-underline{
+            background-color:$tertiary-color;
+            height:3px;
+            width:40px;
+            margin-top:3px;
+            
+            
         }
         .menu-part-dishes{
         height: 70px;
@@ -188,7 +204,31 @@ input::placeholder{
         border-radius:25px;
         margin:auto;
         margin-top:15px;
-        text-align:center;
+        .menu-part-price{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .fa-check-circle{
+            color:white;
+            font-size:2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:$tertiary-color;
+            
+            position:relative;
+            bottom:57px;
+            left:275px;
+            height: 70px;
+            width:70px;
+            border-radius:0 25px 25px 0;
+            
+            
+            
+        }
+ 
         }    
     }
 }

@@ -9,6 +9,7 @@
     border-radius: 30px;
     box-shadow: 1px 1px 10px $secondary-color;
     border:none;
+    cursor: pointer;
     &.btn-explore{
     margin-top:40px;
     font-size:1rem;
@@ -26,4 +27,3 @@
 .btn-command{
     margin-top:40px;
 }
- 
