@@ -42,7 +42,7 @@ l’utilisateur est redirigé vers la page du menu.<br/>
 les animations ou transitions CSS, pas de JavaScript ni de librairie.<br/>
 <strong>Boutons</strong><br/>
 ● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
-L’ombre portée devra également être plus visible.
+L’ombre portée devra également être plus visible.<br/>
 ● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
 bouton "J’aime" en forme de coeur est présent sur la maquette. Au clic, il devra se
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au

@@ -116,12 +116,12 @@ a {
   border-top: 3px inset;
 }
 
-#recherche .recherche-position {
+#recherche .recherche__position {
   padding-right: 10px;
   padding-top: 15px;
 }
 
-#recherche .recherche-lieu {
+#recherche .recherche__lieu {
   border: none;
   width: 50%;
   background-color: #eaeaea;
@@ -178,7 +178,7 @@ input::placeholder {
   margin-left: 10px;
 }
 
-.function .function-card {
+.function .function__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,20 +199,20 @@ input::placeholder {
   line-height: 75px;
 }
 
-.function .function-card:hover {
+.function .function__card:hover {
   background-color: #FF79DA;
   cursor: pointer;
 }
 
-.function .function-card:hover .function-card_icon {
+.function .function__card:hover .function-card_icon {
   color: #9356DC;
 }
 
-.function .function-card .function-card_icon {
+.function .function__card .function__card__icon {
   margin-right: 20px;
 }
 
-.function .function-card .function-card_number {
+.function .function__card .function__card__number {
   background-color: #9356DC;
   border-radius: 30px;
   height: 30px;
@@ -224,7 +224,7 @@ input::placeholder {
   margin-right: 330px;
 }
 
-.function .function-card .function-card_text {
+.function .function__card .function__card__text {
   margin-right: 40px;
 }
 
@@ -244,7 +244,7 @@ input::placeholder {
   text-align: center;
 }
 
-.restaurant .restaurant-card {
+.restaurant .restaurant__card {
   background-color: white;
   height: 250px;
   width: 335px;
@@ -253,7 +253,7 @@ input::placeholder {
   text-align: left;
 }
 
-.restaurant .restaurant-card img {
+.restaurant .restaurant__card img {
   height: 175px;
   width: 335px;
   border-radius: 25px 25px 0 0;
@@ -261,7 +261,7 @@ input::placeholder {
      object-fit: cover;
 }
 
-.restaurant .restaurant-card .restaurant-card-new {
+.restaurant .restaurant__card .restaurant__card-new {
   height: 30px;
   width: 80px;
   background-color: #99E2D0;
@@ -271,7 +271,7 @@ input::placeholder {
   text-align: center;
 }
 
-.restaurant .restaurant-card .restaurant-card_tag {
+.restaurant .restaurant__card .restaurant__card__tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,25 +279,25 @@ input::placeholder {
       justify-content: space-around;
 }
 
-.restaurant .restaurant-card .restaurant-card_name {
+.restaurant .restaurant__card .restaurant__card__name {
   width: 75%;
   margin-left: 10px;
   margin-top: 10px;
   line-height: 20px;
 }
 
-.restaurant .restaurant-card .restaurant-card_heart {
+.restaurant .restaurant__card .restaurant__card__heart {
   margin-top: 15px;
   margin-right: 20px;
   font-size: 1.6rem;
 }
 
-.restaurant .restaurant-card .restaurant-card_heart:hover {
+.restaurant .restaurant__card .restaurant__card__heart:hover {
   color: #9356DC;
 }
 
-.index-img {
-  width: 375px;
+.index__img {
+  width: 100%;
   height: 255px;
 }
 
@@ -312,12 +312,12 @@ input::placeholder {
   border-radius: 40px 40px 0 0;
 }
 
-.place .place-name {
+.place .place__name {
   padding-top: 5%;
   font-size: 1.5rem;
 }
 
-.place .place-name .fa-heart {
+.place .place__name .fa-heart {
   padding-left: 60px;
   padding-right: 10px;
 }
@@ -332,19 +332,19 @@ input::placeholder {
   margin-top: 30px;
 }
 
-.place .menu .menu-part {
+.place .menu .menu__part {
   font-weight: 600;
   margin-left: 5%;
 }
 
-.place .menu .menu-part-underline {
+.place .menu .menu__part-underline {
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
   margin-top: 3px;
 }
 
-.place .menu .menu-part-dishes {
+.place .menu .menu__part__dishes {
   height: 70px;
   width: 345px;
   background-color: white;
@@ -355,7 +355,7 @@ input::placeholder {
   margin-top: 15px;
 }
 
-.place .menu .menu-part-dishes .menu-part-price {
+.place .menu .menu__part__dishes .menu__part__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +367,7 @@ input::placeholder {
       justify-content: space-around;
 }
 
-.place .menu .menu-part-dishes .fa-check-circle {
+.place .menu .menu__part__dishes .fa-check-circle {
   color: white;
   font-size: 2rem;
   display: -webkit-box;
