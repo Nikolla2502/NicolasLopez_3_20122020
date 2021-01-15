@@ -13,8 +13,8 @@ body {
   height: 50px;
   width: 220px;
   border-radius: 30px;
-  -webkit-box-shadow: 3px 3px 10px #FF79DA;
-          box-shadow: 3px 3px 10px #FF79DA;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
   border: none;
   cursor: pointer;
 }
@@ -30,8 +30,8 @@ body {
 
 .btn:hover {
   opacity: 0.6;
-  -webkit-box-shadow: 10px 10px 25px #FF79DA;
-          box-shadow: 10px 10px 25px #FF79DA;
+  -webkit-box-shadow: 1px 1px 20px #FF79DA;
+          box-shadow: 1px 1px 20px #FF79DA;
 }
 
 .btn-command {
@@ -114,7 +114,8 @@ a {
           justify-content: center;
   height: 50px;
   background-color: #eaeaea;
-  border-top: 3px inset;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
 }
 
 #recherche .recherche__position {
@@ -344,7 +345,9 @@ input::placeholder {
   text-align: left;
 }
 
-.place .menu .menu__part-underline {
+.place .menu .menu__part::after {
+  content: "";
+  display: block;
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
@@ -377,24 +380,28 @@ input::placeholder {
   line-height: 20px;
   text-align: left;
   margin: 15px 0 0 20px;
+  text-overflow: ellipsis;
+  /*#########################*/
 }
 
 .place .menu .menu__part__dishes .menu__part__price {
   margin: 35px 30px 0 0;
+  text-overflow: ellipsis;
+  /*#########################*/
 }
 
 .place .menu .menu__part__dishes .menu__part__check {
   height: 70px;
   width: 70px;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 20px 20px 0;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
 }
 
 .place .menu .menu__part__dishes .fa-check-circle {
@@ -412,6 +419,6 @@ input::placeholder {
   background: #99E2D0;
   height: 70px;
   width: 70px;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 20px 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

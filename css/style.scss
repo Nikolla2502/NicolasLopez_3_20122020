@@ -19,7 +19,7 @@ a{
     justify-content: center;
     height:50px;
     background-color:$bg-color-darken;
-    border-top: 3px inset;
+    box-shadow: 5px 5px 10px;
     .recherche__position{
         padding-right:10px;
         padding-top:15px;
@@ -192,7 +192,9 @@ input::placeholder{
         margin-left:5%;
         text-align: left;
         }
-        .menu__part-underline{
+        .menu__part::after{
+            content:"";
+            display: block;
             background-color:$tertiary-color;
             height:3px;
             width:40px;
@@ -220,19 +222,20 @@ input::placeholder{
             line-height:20px;
             text-align: left;
             margin:15px 0 0 20px;
+            text-overflow: ellipsis;/*#########################*/
         }
         .menu__part__price{
             
             margin:35px 30px 0 0;
-
+            text-overflow: ellipsis; /*#########################*/
         }
         .menu__part__check{
             height: 70px;
             width:70px;
-            border-radius:0 25px 25px 0;
+            border-radius:0 20px 20px 0;
             transform-origin: right;
             transform: scaleX(0);
-            transition: transform 500ms;
+            transition: transform 300ms;
 
         }
         .fa-check-circle{
@@ -244,7 +247,7 @@ input::placeholder{
             background:$tertiary-color;
             height: 70px;
             width:70px;
-            border-radius:0 25px 25px 0;
+            border-radius:0 20px 20px 0;
 
 
             
