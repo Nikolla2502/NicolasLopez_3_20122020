@@ -1,3 +1,59 @@
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacitystart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacitystart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -202,16 +258,17 @@ input::placeholder {
 }
 
 .function .function__card:hover {
-  background-color: #FF79DA;
+  background-color: #ffc6ef;
   cursor: pointer;
 }
 
-.function .function__card:hover .function-card_icon {
+.function .function__card:hover .function__card__icon {
   color: #9356DC;
 }
 
 .function .function__card .function__card__icon {
   margin-right: 20px;
+  font-size: 1.5rem;
 }
 
 .function .function__card .function__card__number {
@@ -288,13 +345,13 @@ input::placeholder {
   line-height: 20px;
 }
 
-.restaurant .restaurant__card .restaurant__card__heart {
+.restaurant .restaurant__card .fa-heart {
   margin-top: 15px;
   margin-right: 20px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
-.restaurant .restaurant__card .restaurant__card__heart:hover {
+.restaurant .restaurant__card .fa-heart:hover {
   color: #9356DC;
 }
 
@@ -327,6 +384,10 @@ input::placeholder {
   padding-right: 10px;
 }
 
+.place .place__name .fa-heart:hover {
+  color: #9356DC;
+}
+
 .place .menu {
   Font-family: 'Roboto';
   display: -webkit-box;
@@ -343,6 +404,8 @@ input::placeholder {
   font-weight: 600;
   margin-left: 5%;
   text-align: left;
+  -webkit-animation: opacitystart 2000ms;
+          animation: opacitystart 2000ms;
 }
 
 .place .menu .menu__part::after {
@@ -369,28 +432,79 @@ input::placeholder {
   border-radius: 20px;
   margin: auto;
   margin-top: 15px;
+  -webkit-animation: slideup ease-in-out 1500ms 100ms;
+          animation: slideup ease-in-out 1500ms 100ms;
 }
 
-.place .menu .menu__part__dishes:hover > .menu__part__check {
+.place .menu .menu__part__dishes.delay-1 {
+  -webkit-animation: slideup ease-in-out 1500ms 300ms;
+          animation: slideup ease-in-out 1500ms 300ms;
+}
+
+.place .menu .menu__part__dishes.delay-2 {
+  -webkit-animation: slideup ease-in-out 1500ms 500ms;
+          animation: slideup ease-in-out 1500ms 500ms;
+}
+
+.place .menu .menu__part__dishes.delay-3 {
+  -webkit-animation: slideup ease-in-out 1500ms 700ms;
+          animation: slideup ease-in-out 1500ms 700ms;
+}
+
+.place .menu .menu__part__dishes.delay-4 {
+  -webkit-animation: slideup ease-in-out 1500ms 900ms;
+          animation: slideup ease-in-out 1500ms 900ms;
+}
+
+.place .menu .menu__part__dishes.delay-5 {
+  -webkit-animation: slideup ease-in-out 1500ms 1100ms;
+          animation: slideup ease-in-out 1500ms 1100ms;
+}
+
+.place .menu .menu__part__dishes.delay-6 {
+  -webkit-animation: slideup ease-in-out 1500ms 1300ms;
+          animation: slideup ease-in-out 1500ms 1300ms;
+}
+
+.place .menu .menu__part__dishes.delay-7 {
+  -webkit-animation: slideup ease-in-out 1500ms 1500ms;
+          animation: slideup ease-in-out 1500ms 1500ms;
+}
+
+.place .menu .menu__part__dishes.delay-8 {
+  -webkit-animation: slideup ease-in-out 1500ms 1700ms;
+          animation: slideup ease-in-out 1500ms 1700ms;
+}
+
+.place .menu .menu__part__dishes:hover .menu__part__price {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+.place .menu .menu__part__dishes:hover .menu__part__check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  opacity: 1;
 }
 
-.place .menu .menu__part__dishes .menu__part__description {
+.place .menu .menu__part__description {
   line-height: 20px;
   text-align: left;
   margin: 15px 0 0 20px;
   text-overflow: ellipsis;
-  /*#########################*/
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.place .menu .menu__part__dishes .menu__part__price {
-  margin: 35px 30px 0 0;
-  text-overflow: ellipsis;
-  /*#########################*/
+.place .menu .menu__part__price {
+  margin: 35px 25px 0 0;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
-.place .menu .menu__part__dishes .menu__part__check {
+.place .menu .menu__part__check {
   height: 70px;
   width: 70px;
   border-radius: 0 20px 20px 0;
@@ -398,13 +512,14 @@ input::placeholder {
           transform-origin: right;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  opacity: 0;
 }
 
-.place .menu .menu__part__dishes .fa-check-circle {
+.place .menu .fa-check-circle {
   color: white;
   font-size: 2rem;
   display: -webkit-box;

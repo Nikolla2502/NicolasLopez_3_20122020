@@ -1,6 +1,7 @@
 @import "utils/variables";
 @import "utils/functions";
 @import "utils/mixins";
+@import "utils/animations";
 
 @import "base/base";
 
@@ -74,14 +75,17 @@ input::placeholder{
     line-height:75px;
     &:hover{
         
-            background-color:$secondary-color;
+            background-color:lighten($secondary-color,15);
+            
             cursor:pointer;
-            .function-card_icon{
+            .function__card__icon{
                 color:$primary-color;
-             }
-        }
+                
+            }
+    }
     .function__card__icon{
         margin-right:20px;
+        font-size: 1.5rem;
     }
     
 
@@ -141,10 +145,10 @@ input::placeholder{
             margin-top:10px;
             line-height:20px;
         }
-        .restaurant__card__heart{
+        .fa-heart{
             margin-top:15px;
             margin-right:20px;
-            font-size:1.6rem;
+            font-size:1.7rem;
             &:hover{
                 color:$primary-color; 
                 
@@ -154,15 +158,15 @@ input::placeholder{
     }
 }
 
+
 //#######################//
 //##### Restaurant#######//
 .index__img{
     width:100%;
     height:255px;
     object-fit: cover;
-    
-    
 }
+
 .place{
   Font-family:'Shrikhand';
   height: 1200px;
@@ -179,6 +183,13 @@ input::placeholder{
         .fa-heart{
             padding-left:60px;
             padding-right:10px;
+            
+            
+            &:hover{
+                color:$primary-color; 
+                
+                
+            }
         }
     }
     .menu{
@@ -191,6 +202,7 @@ input::placeholder{
         font-weight: 600;
         margin-left:5%;
         text-align: left;
+        animation: opacitystart 2000ms;
         }
         .menu__part::after{
             content:"";
@@ -199,8 +211,6 @@ input::placeholder{
             height:3px;
             width:40px;
             margin-top:3px;
-            
-            
         }
         .menu__part__dishes{
         display:flex;
@@ -212,22 +222,60 @@ input::placeholder{
         border-radius:20px;
         margin:auto;
         margin-top:15px;
+        animation: slideup ease-in-out 1500ms 100ms;
+            &.delay-1{
+                animation: slideup ease-in-out 1500ms 300ms;
+            }
+            &.delay-2{
+                animation: slideup ease-in-out 1500ms 500ms;
+            }
+            &.delay-3{
+                animation: slideup ease-in-out 1500ms 700ms;
+            }
+            &.delay-4{
+                animation: slideup ease-in-out 1500ms 900ms;
+            }
+            &.delay-5{
+                animation: slideup ease-in-out 1500ms 1100ms;
+            }
+            &.delay-6{
+                animation: slideup ease-in-out 1500ms 1300ms;
+            }
+            &.delay-7{
+                animation: slideup ease-in-out 1500ms 1500ms;
+            }
+            &.delay-8{
+                animation: slideup ease-in-out 1500ms 1700ms;
+            }
             &:hover{
-                & > .menu__part__check{
+                // &.menu__part__description{
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
+                // overflow: hidden;}
+                
+                .menu__part__price{
+                transform: translateX(-55px);
+                }
+                .menu__part__check{
                 transform: scaleX(1);
+                opacity: 1;
                 }     
             }
+        }
         .menu__part__description{
             
             line-height:20px;
             text-align: left;
             margin:15px 0 0 20px;
-            text-overflow: ellipsis;/*#########################*/
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
         .menu__part__price{
             
-            margin:35px 30px 0 0;
-            text-overflow: ellipsis; /*#########################*/
+            margin:35px 25px 0 0;
+            transition: transform 500ms;
+            
         }
         .menu__part__check{
             height: 70px;
@@ -235,7 +283,8 @@ input::placeholder{
             border-radius:0 20px 20px 0;
             transform-origin: right;
             transform: scaleX(0);
-            transition: transform 300ms;
+            transition: transform 500ms;
+            opacity: 0;
 
         }
         .fa-check-circle{
@@ -248,13 +297,9 @@ input::placeholder{
             height: 70px;
             width:70px;
             border-radius:0 20px 20px 0;
-
-
-            
-            
         }
  
-        }    
-    }
+    }    
+
 }
 
