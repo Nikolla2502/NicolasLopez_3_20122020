@@ -2,7 +2,7 @@
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/animations";
-
+@import "utils/loader";
 @import "base/base";
 
 @import "components/buttons";
@@ -21,6 +21,7 @@ a{
     height:50px;
     background-color:$bg-color-darken;
     box-shadow: 5px 5px 10px;
+    
     .recherche__position{
         padding-right:10px;
         padding-top:15px;
@@ -150,7 +151,9 @@ input::placeholder{
             margin-right:20px;
             font-size:1.7rem;
             &:hover{
+                background-clip: content-box;
                 color:$primary-color; 
+                
                 
                 
             }
@@ -248,10 +251,10 @@ input::placeholder{
                 animation: slideup ease-in-out 1500ms 1700ms;
             }
             &:hover{
-                // &.menu__part__description{
-                // text-overflow: ellipsis;
-                // white-space: nowrap;
-                // overflow: hidden;}
+                &.menu__part__description{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;}
                 
                 .menu__part__price{
                 transform: translateX(-55px);
@@ -266,6 +269,7 @@ input::placeholder{
             
             line-height:20px;
             text-align: left;
+            width:250px;
             margin:15px 0 0 20px;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -273,7 +277,7 @@ input::placeholder{
         }
         .menu__part__price{
             
-            margin:35px 25px 0 0;
+            margin:35px -70px 0 0;
             transition: transform 500ms;
             
         }

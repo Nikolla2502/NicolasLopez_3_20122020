@@ -1,0 +1,61 @@
+@keyframes grow{
+    0%{
+    transform:scaleY(0); opacity:0;
+    }
+    50%{
+    transform:scaleY(1); opacity:1;
+    }
+    100%{
+        transform:scaleY(0); opacity:0;
+        }
+}
+
+
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+.loader{
+
+    position: absolute;
+    margin:0 43%;
+    
+    
+}
+.loader_bars::before,
+.loader_bars::after,
+.loader_bars span,
+.loader_bars span::before,
+.loader_bars span::after{
+
+    content: "";
+    border-radius:10px;
+    display: block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:20px;
+    height:200px;
+    background-color: $primary-color;
+    animation: grow 2s ease-in-out 4;
+    opacity:0;
+}
+.loader_bars::after{
+    left:25px;
+    background-color:$secondary-color;
+    animation-delay:0.2s;
+}
+.loader_bars span{
+    left:50px;
+    background-color: $primary-color;
+    animation-delay:0.4s ;
+}
+
+.loader_bars span::before{
+    left:25px;
+    background-color:$secondary-color;
+    animation-delay:0.6s;
+}
+.loader_bars span::after{
+    left:50px;
+    background-color:$primary-color;
+    animation-delay:0.8s;
+}
