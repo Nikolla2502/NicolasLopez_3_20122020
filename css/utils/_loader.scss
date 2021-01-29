@@ -16,8 +16,7 @@ $secondary-color:#FF79DA;
 .loader{
 
     position: absolute;
-    margin:0 43%;
-    
+    margin:5% 0 0 27%;    
     
 }
 .loader_bars::before,
@@ -33,7 +32,7 @@ $secondary-color:#FF79DA;
     left:0;
     top:0;
     width:20px;
-    height:200px;
+    height:250px;
     background-color: $primary-color;
     animation: grow 2s ease-in-out 4;
     opacity:0;

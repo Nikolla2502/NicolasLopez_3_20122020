@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/animations";
 @import "utils/loader";
+
 @import "base/base";
 
 @import "components/buttons";
@@ -19,11 +20,16 @@ a{
     display:flex;
     justify-content: center;
     height:50px;
+    width:100%;
     background-color:$bg-color-darken;
     box-shadow: 5px 5px 10px;
-    
+    .recherche_bloc{
+        display:flex;
+        justify-content: center;
+        width:350px;
+    }
     .recherche__position{
-        padding-right:10px;
+        padding-right:20px;
         padding-top:15px;
     }
     .recherche__lieu{
@@ -162,8 +168,9 @@ input::placeholder{
 }
 
 
+//#######################\\
+//####  Restaurant  #####//
 //#######################//
-//##### Restaurant#######//
 .index__img{
     width:100%;
     height:255px;
@@ -199,13 +206,12 @@ input::placeholder{
     Font-family:'Roboto';
     display:flex;
     flex-direction: column;
-    // flex-wrap:wrap;
     margin-top:30px;
         .menu__part{
         font-weight: 600;
         margin-left:5%;
         text-align: left;
-        animation: opacitystart 2000ms;
+        animation: opacitystart 2500ms;
         }
         .menu__part::after{
             content:"";
@@ -251,10 +257,10 @@ input::placeholder{
                 animation: slideup ease-in-out 1500ms 1700ms;
             }
             &:hover{
-                &.menu__part__description{
+                .menu__part__description{
                 text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;}
+                
+                }
                 
                 .menu__part__price{
                 transform: translateX(-55px);
@@ -266,17 +272,18 @@ input::placeholder{
             }
         }
         .menu__part__description{
-            
+            font-size:0.9rem;
             line-height:20px;
             text-align: left;
             width:250px;
             margin:15px 0 0 20px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            
+
+            strong{
+            font-size:1.1rem;
+            }
         }
         .menu__part__price{
-            
             margin:35px -70px 0 0;
             transition: transform 500ms;
             
@@ -307,3 +314,73 @@ input::placeholder{
 
 }
 
+
+/*#################################*\
+####          Media querys       ####
+####            768 px           #### 
+\*#################################*/
+
+@media all and (min-width: 767px){
+    .index__img{
+        width:100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .place .menu .menu__part{
+       margin-left:15%;
+    }
+}
+/*#################################*\
+####          Media querys       ####
+####            1024 px           #### 
+\*#################################*/
+
+@media all and (min-width: 1024px){
+    .index__img{
+        width:100%;
+        height:600px;
+        object-fit: cover;
+
+    }
+    .place .menu {
+        display:flex;
+        flex-direction:column;
+        
+
+    }
+    .place .menu .menu__part{
+       margin-left:15%;
+    
+    }
+    
+    .place .menu .menu__items{
+        display:flex;
+        
+        
+    }
+    .btn-command{
+        margin-top:100px;
+        
+    }
+
+}
+
+/*#################################*\
+####          Media querys       ####
+####            1440 px           #### 
+\*#################################*/
+
+@media all and (min-width: 1440px){
+    .place .menu .menu__items{
+        display:flex;
+        justify-content: space-between;
+        margin:auto;
+    }
+    .place .menu .menu__items .menu__part__dishes{
+        margin:15px;
+    }
+    .btn-command{
+        margin-top:100px;
+        
+    }
+}

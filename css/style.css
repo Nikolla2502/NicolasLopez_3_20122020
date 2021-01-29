@@ -34,7 +34,7 @@
   0% {
     opacity: 0;
   }
-  50% {
+  80% {
     opacity: 0;
   }
   100% {
@@ -46,7 +46,7 @@
   0% {
     opacity: 0;
   }
-  50% {
+  80% {
     opacity: 0;
   }
   100% {
@@ -92,7 +92,7 @@
 
 .loader {
   position: absolute;
-  margin: 0 43%;
+  margin: 5% 0 0 27%;
 }
 
 .loader_bars::before,
@@ -107,7 +107,7 @@
   left: 0;
   top: 0;
   width: 20px;
-  height: 200px;
+  height: 250px;
   background-color: #9356DC;
   -webkit-animation: grow 2s ease-in-out 4;
           animation: grow 2s ease-in-out 4;
@@ -180,6 +180,8 @@ body {
 
 .btn-command {
   margin-top: 40px;
+  -webkit-animation: opacitystart 3s;
+          animation: opacitystart 3s;
 }
 
 header {
@@ -257,13 +259,24 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
+  width: 100%;
   background-color: #eaeaea;
   -webkit-box-shadow: 5px 5px 10px;
           box-shadow: 5px 5px 10px;
 }
 
+#recherche .recherche_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+}
+
 #recherche .recherche__position {
-  padding-right: 10px;
+  padding-right: 20px;
   padding-top: 15px;
 }
 
@@ -493,8 +506,8 @@ input::placeholder {
   font-weight: 600;
   margin-left: 5%;
   text-align: left;
-  -webkit-animation: opacitystart 2000ms;
-          animation: opacitystart 2000ms;
+  -webkit-animation: opacitystart 2500ms;
+          animation: opacitystart 2500ms;
 }
 
 .place .menu .menu__part::after {
@@ -565,10 +578,8 @@ input::placeholder {
           animation: slideup ease-in-out 1500ms 1700ms;
 }
 
-.place .menu .menu__part__dishes:hover.menu__part__description {
+.place .menu .menu__part__dishes:hover .menu__part__description {
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__price {
@@ -583,13 +594,15 @@ input::placeholder {
 }
 
 .place .menu .menu__part__description {
+  font-size: 0.9rem;
   line-height: 20px;
   text-align: left;
   width: 250px;
   margin: 15px 0 0 20px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+}
+
+.place .menu .menu__part__description strong {
+  font-size: 1.1rem;
 }
 
 .place .menu .menu__part__price {
@@ -631,5 +644,76 @@ input::placeholder {
   height: 70px;
   width: 70px;
   border-radius: 0 20px 20px 0;
+}
+
+/*#################################*\
+####          Media querys       ####
+####            768 px           #### 
+\*#################################*/
+@media all and (min-width: 767px) {
+  .index__img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .place .menu .menu__part {
+    margin-left: 15%;
+  }
+}
+
+/*#################################*\
+####          Media querys       ####
+####            1024 px           #### 
+\*#################################*/
+@media all and (min-width: 1024px) {
+  .index__img {
+    width: 100%;
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .place .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .place .menu .menu__part {
+    margin-left: 15%;
+  }
+  .place .menu .menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn-command {
+    margin-top: 100px;
+  }
+}
+
+/*#################################*\
+####          Media querys       ####
+####            1440 px           #### 
+\*#################################*/
+@media all and (min-width: 1440px) {
+  .place .menu .menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+  }
+  .place .menu .menu__items .menu__part__dishes {
+    margin: 15px;
+  }
+  .btn-command {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
