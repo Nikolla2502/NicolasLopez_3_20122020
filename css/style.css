@@ -446,14 +446,14 @@ input::placeholder {
   line-height: 20px;
 }
 
-.restaurant .restaurant__card .fa-heart {
+.restaurant .restaurant__card .far {
   margin-top: 15px;
   margin-right: 20px;
   font-size: 1.7rem;
 }
 
-.restaurant .restaurant__card .fa-heart:hover {
-  background-clip: content-box;
+.restaurant .restaurant__card .far:hover {
+  background-clip: text;
   color: #9356DC;
 }
 
@@ -482,12 +482,25 @@ input::placeholder {
   font-size: 1.5rem;
 }
 
-.place .place__name .fa-heart {
+.place .place__name .far {
   padding-left: 60px;
   padding-right: 10px;
+  font-size: 2rem;
 }
 
-.place .place__name .fa-heart:hover {
+.place .place__name .far:hover {
+  display: none;
+}
+
+.place .place__name .fas {
+  position: relative;
+  left: -47px;
+  top: 1px;
+  font-size: 2.1rem;
+  color: transparent;
+}
+
+.place .place__name .fas:hover {
   color: #9356DC;
 }
 
@@ -602,9 +615,6 @@ input::placeholder {
   text-align: left;
   width: 250px;
   margin: 15px 0 0 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .place .menu .menu__part__description strong {

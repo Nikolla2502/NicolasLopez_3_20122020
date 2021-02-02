@@ -152,13 +152,14 @@ input::placeholder{
             margin-top:10px;
             line-height:20px;
         }
-        .fa-heart{
+        .far{
             margin-top:15px;
             margin-right:20px;
             font-size:1.7rem;
             &:hover{
-                background-clip: content-box;
+                background-clip: text;
                 color:$primary-color; 
+                
                 
                 
                 
@@ -192,14 +193,22 @@ input::placeholder{
     .place__name{
         padding-top:5%;
         font-size:1.5rem;
-        .fa-heart{
+        .far{
             padding-left:60px;
             padding-right:10px;
-            
-            
+            font-size:2rem;
             &:hover{
-                color:$primary-color; 
-                
+                display:none; 
+            }
+        }
+        .fas{
+            position:relative;
+            left:-47px;
+            top:1px;
+            font-size:2.1rem;
+            color:transparent;
+            &:hover{
+                color:$primary-color;
                 
             }
         }
@@ -259,11 +268,12 @@ input::placeholder{
                 animation: slideup ease-in-out 1500ms 1700ms;
             }
             &:hover{
-                 .menu__part__description{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
+                .menu__part__description{
+                    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
                 
                 .menu__part__price{
                 transform: translateX(-55px);
@@ -276,15 +286,13 @@ input::placeholder{
             }
         }
         .menu__part__description{
+
             font-size:0.9rem;
             line-height:20px;
             text-align: left;
             width:250px;
             margin:15px 0 0 20px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
+            
             strong{
             font-size:1.1rem;
             }
