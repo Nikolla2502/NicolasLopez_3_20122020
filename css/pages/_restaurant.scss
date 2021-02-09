@@ -94,20 +94,20 @@
                 animation: slideup ease-in-out 1500ms 1700ms;
             }
             &:hover{
-                .menu__part__description{
-                    & p{
+                
+                
+                .menu__part__price{
+                transform: translateX(-55px);
+                >.menu__part__description p{
+                    
                     color:red;   /**????????????*/
                     display:block;
                     overflow:hidden;
                     text-overflow:ellipsis;
                     white-space:nowrap;
-                    }
                     
-                }
-                
-                .menu__part__price{
-                transform: translateX(-55px);
-                                  
+                    
+                }                  
                 }
                 .menu__part__check{
                 transform: scaleX(1);
@@ -122,8 +122,10 @@
             text-align: left;
             width:250px;
             margin:15px 0 0 20px;
+            
             p{
                 margin-top:0;
+                
             }
             strong{
             font-size:1.1rem;

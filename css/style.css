@@ -349,18 +349,18 @@ footer li a {
           animation: slideup ease-in-out 1500ms 1700ms;
 }
 
-.place .menu .menu__part__dishes:hover .menu__part__description p {
+.place .menu .menu__part__dishes:hover .menu__part__price {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+.place .menu .menu__part__dishes:hover .menu__part__price > .menu__part__description p {
   color: red;
   /**????????????*/
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.place .menu .menu__part__dishes:hover .menu__part__price {
-  -webkit-transform: translateX(-55px);
-          transform: translateX(-55px);
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__check {
@@ -499,6 +499,11 @@ input::placeholder {
   font-size: 1.4em;
 }
 
+/*#################################*\
+#                                   #
+#  Section Fonctionnement           #
+#                                   #
+\##################################*/
 .function {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +568,11 @@ input::placeholder {
   margin-right: 40px;
 }
 
+/*#################################*\
+#                                   #
+#  Section Choix du restaurant      #
+#                                   #
+\##################################*/
 .restaurant {
   height: 1225px;
   background-color: #f6f6f6;
@@ -682,6 +692,34 @@ input::placeholder {
   }
   .place .menu .menu__part {
     margin-left: 15%;
+  }
+  .restaurant {
+    height: 800px;
+  }
+  .restaurant .restaurant__card {
+    margin: 30px 20px 30px 20px;
+  }
+  .restaurant__choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1024px;
+  }
+  .function h1 {
+    margin-left: 50px;
+  }
+  .loader {
+    position: absolute;
+    margin: 5% 0 0 39%;
   }
 }
 

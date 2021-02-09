@@ -16,12 +16,6 @@
 
 
 
-
-
-
-
-
-
 /*#################################*\
 ####          Media querys       ####
 ####            768 px           #### 
@@ -36,6 +30,35 @@
     .place .menu .menu__part{
        margin-left:15%;
     }
+    .restaurant{
+        height:800px;
+        .restaurant__card{
+
+        margin:30px 20px 30px 20px;
+        
+        }
+    }
+    
+    .restaurant__choice{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: center;
+        max-width:1024px;
+        
+    } 
+
+
+    .function h1{
+        margin-left:50px;
+    }
+    .loader{
+
+        position: absolute;
+        margin:5% 0 0 39%;    
+        
+    }
+      
 }
 /*#################################*\
 ####          Media querys       ####

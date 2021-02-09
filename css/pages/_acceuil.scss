@@ -43,6 +43,14 @@ input::placeholder{
     
 }
 
+/*#################################*\
+#                                   #
+#  Section Fonctionnement           #
+#                                   #
+\##################################*/
+
+
+
 .function{
     display:flex;
     flex-direction:column;
@@ -95,6 +103,15 @@ input::placeholder{
 
     }
 }
+
+
+/*#################################*\
+#                                   #
+#  Section Choix du restaurant      #
+#                                   #
+\##################################*/
+
+
 .restaurant{
     height:1225px;
     background-color:$bg-color;
