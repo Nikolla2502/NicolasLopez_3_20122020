@@ -151,17 +151,15 @@ input::placeholder{
             margin-top:10px;
             line-height:20px;
         }
-        .far{
+        .icon.heart{
             margin-top:15px;
             margin-right:20px;
-            font-size:1.7rem;
+            width:20px;
+            fill:transparent;
+            stroke-width:35;
+            stroke: black;
             &:hover{
-                background-clip: text;
-                color:$primary-color; 
-                
-                
-                
-                
+                fill:$primary-color; 
             }
         }
     }

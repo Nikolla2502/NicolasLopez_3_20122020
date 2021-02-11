@@ -235,30 +235,27 @@ footer li a {
 }
 
 .place .place__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 5%;
   font-size: 1.5rem;
 }
 
-.place .place__name .far {
+.place .place__name .icon.heart {
   padding-left: 60px;
   padding-right: 10px;
-  font-size: 2rem;
+  width: 30px;
+  fill: transparent;
+  stroke-width: 35;
+  stroke: black;
 }
 
-.place .place__name .far:hover {
-  display: none;
-}
-
-.place .place__name .fas {
-  position: relative;
-  left: -47px;
-  top: 1px;
-  font-size: 2.1rem;
-  color: transparent;
-}
-
-.place .place__name .fas:hover {
-  color: #9356DC;
+.place .place__name .icon.heart:hover {
+  fill: #9356DC;
 }
 
 .place .menu {
@@ -305,6 +302,7 @@ footer li a {
   border-radius: 20px;
   margin: auto;
   margin-top: 15px;
+  overflow: hidden;
   -webkit-animation: slideup ease-in-out 1500ms 100ms;
           animation: slideup ease-in-out 1500ms 100ms;
 }
@@ -349,12 +347,7 @@ footer li a {
           animation: slideup ease-in-out 1500ms 1700ms;
 }
 
-.place .menu .menu__part__dishes:hover .menu__part__price {
-  -webkit-transform: translateX(-55px);
-          transform: translateX(-55px);
-}
-
-.place .menu .menu__part__dishes:hover .menu__part__price > .menu__part__description p {
+.place .menu .menu__part__dishes:hover .menu__part__description p {
   color: red;
   /**????????????*/
   display: block;
@@ -363,10 +356,26 @@ footer li a {
   white-space: nowrap;
 }
 
+.place .menu .menu__part__dishes:hover .menu__part__block {
+  z-index: auto;
+}
+
+.place .menu .menu__part__dishes:hover .menu__part__price {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
 .place .menu .menu__part__dishes:hover .menu__part__check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
+}
+
+.place .menu .menu__part__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*????????????,*/
 }
 
 .place .menu .menu__part__description {
@@ -386,7 +395,7 @@ footer li a {
 }
 
 .place .menu .menu__part__price {
-  margin: 35px -70px 0 0;
+  margin: 35px -40px 0 0;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
@@ -631,15 +640,17 @@ input::placeholder {
   line-height: 20px;
 }
 
-.restaurant .restaurant__card .far {
+.restaurant .restaurant__card .icon.heart {
   margin-top: 15px;
   margin-right: 20px;
-  font-size: 1.7rem;
+  width: 20px;
+  fill: transparent;
+  stroke-width: 35;
+  stroke: black;
 }
 
-.restaurant .restaurant__card .far:hover {
-  background-clip: text;
-  color: #9356DC;
+.restaurant .restaurant__card .icon.heart:hover {
+  fill: #9356DC;
 }
 
 .btn {
