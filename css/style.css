@@ -303,6 +303,48 @@ footer li a {
   margin: auto;
   margin-top: 15px;
   white-space: nowrap;
+  -webkit-animation: slideup ease-in-out 1500ms 100ms;
+          animation: slideup ease-in-out 1500ms 100ms;
+}
+
+.place .menu .menu__part__dishes.delay-1 {
+  -webkit-animation: slideup ease-in-out 1500ms 300ms;
+          animation: slideup ease-in-out 1500ms 300ms;
+}
+
+.place .menu .menu__part__dishes.delay-2 {
+  -webkit-animation: slideup ease-in-out 1500ms 500ms;
+          animation: slideup ease-in-out 1500ms 500ms;
+}
+
+.place .menu .menu__part__dishes.delay-3 {
+  -webkit-animation: slideup ease-in-out 1500ms 700ms;
+          animation: slideup ease-in-out 1500ms 700ms;
+}
+
+.place .menu .menu__part__dishes.delay-4 {
+  -webkit-animation: slideup ease-in-out 1500ms 900ms;
+          animation: slideup ease-in-out 1500ms 900ms;
+}
+
+.place .menu .menu__part__dishes.delay-5 {
+  -webkit-animation: slideup ease-in-out 1500ms 1100ms;
+          animation: slideup ease-in-out 1500ms 1100ms;
+}
+
+.place .menu .menu__part__dishes.delay-6 {
+  -webkit-animation: slideup ease-in-out 1500ms 1300ms;
+          animation: slideup ease-in-out 1500ms 1300ms;
+}
+
+.place .menu .menu__part__dishes.delay-7 {
+  -webkit-animation: slideup ease-in-out 1500ms 1500ms;
+          animation: slideup ease-in-out 1500ms 1500ms;
+}
+
+.place .menu .menu__part__dishes.delay-8 {
+  -webkit-animation: slideup ease-in-out 1500ms 1700ms;
+          animation: slideup ease-in-out 1500ms 1700ms;
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__description p {
@@ -607,8 +649,7 @@ input::placeholder {
 }
 
 .restaurant .restaurant__card .icon.heart:hover path {
-  -webkit-animation: fillheart 2s linear forwards;
-          animation: fillheart 2s linear forwards;
+  fill: #9356DC;
 }
 
 .btn {

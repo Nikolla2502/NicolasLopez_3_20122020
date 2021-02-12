@@ -159,7 +159,7 @@ input::placeholder{
             stroke-width:35;
             stroke: black;
             &:hover path{
-               animation: fillheart 2s linear forwards; 
+                fill:$primary-color;
             }
         }
     }
