@@ -10,9 +10,12 @@
     border-radius: 30px;
     box-shadow: 1px 1px 5px $font-color-dark;
     border:none;
+    line-height: 50px;
     cursor: pointer;
+    margin:auto;
     &.btn-explore{
     margin-top:40px;
+    
     font-size:1rem;
    
     }

@@ -27,8 +27,8 @@
             fill:transparent;
             stroke-width:35;
             stroke: black;          
-            &:hover{
-            fill:$primary-color;
+            & path:hover {
+            fill:$primary-color; 
             }
         }
         
@@ -62,7 +62,7 @@
         border-radius:20px;
         margin:auto;
         margin-top:15px;
-        overflow:hidden;
+        white-space:nowrap;
         animation: slideup ease-in-out 1500ms 100ms;
             &.delay-1{
                 animation: slideup ease-in-out 1500ms 300ms;
@@ -91,16 +91,14 @@
             &:hover{
                 .menu__part__description p{
                     
-                    color:red;   /**????????????*/
+                    color:red;         /**????????????*/
                     display:block;
                     overflow:hidden;
                     text-overflow:ellipsis;
                     white-space:nowrap;
                                      
                 }      
-                .menu__part__block{
-                    z-index:auto;
-                }
+
                 .menu__part__price{
                 transform: translateX(-55px);
                            
@@ -116,12 +114,13 @@
         }
 
         .menu__part__description{
-
-            font-size:0.9rem;
-            line-height:20px;
+            line-height:15px;
             text-align: left;
             width:250px;
-            margin:15px 0 0 20px;
+            margin:5px 0 0 16px;
+            h3{
+                margin:12px 0 7px 0;
+            }
             
             p{
                 margin-top:0;
@@ -133,7 +132,7 @@
 
         }
         .menu__part__price{
-            margin:35px -40px 0 0;
+            margin:35px -50px 0 0;
             transition: transform 500ms;
             
         }

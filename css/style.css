@@ -35,7 +35,7 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -47,7 +47,7 @@
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -254,7 +254,7 @@ footer li a {
   stroke: black;
 }
 
-.place .place__name .icon.heart:hover {
+.place .place__name .icon.heart path:hover {
   fill: #9356DC;
 }
 
@@ -302,49 +302,7 @@ footer li a {
   border-radius: 20px;
   margin: auto;
   margin-top: 15px;
-  overflow: hidden;
-  -webkit-animation: slideup ease-in-out 1500ms 100ms;
-          animation: slideup ease-in-out 1500ms 100ms;
-}
-
-.place .menu .menu__part__dishes.delay-1 {
-  -webkit-animation: slideup ease-in-out 1500ms 300ms;
-          animation: slideup ease-in-out 1500ms 300ms;
-}
-
-.place .menu .menu__part__dishes.delay-2 {
-  -webkit-animation: slideup ease-in-out 1500ms 500ms;
-          animation: slideup ease-in-out 1500ms 500ms;
-}
-
-.place .menu .menu__part__dishes.delay-3 {
-  -webkit-animation: slideup ease-in-out 1500ms 700ms;
-          animation: slideup ease-in-out 1500ms 700ms;
-}
-
-.place .menu .menu__part__dishes.delay-4 {
-  -webkit-animation: slideup ease-in-out 1500ms 900ms;
-          animation: slideup ease-in-out 1500ms 900ms;
-}
-
-.place .menu .menu__part__dishes.delay-5 {
-  -webkit-animation: slideup ease-in-out 1500ms 1100ms;
-          animation: slideup ease-in-out 1500ms 1100ms;
-}
-
-.place .menu .menu__part__dishes.delay-6 {
-  -webkit-animation: slideup ease-in-out 1500ms 1300ms;
-          animation: slideup ease-in-out 1500ms 1300ms;
-}
-
-.place .menu .menu__part__dishes.delay-7 {
-  -webkit-animation: slideup ease-in-out 1500ms 1500ms;
-          animation: slideup ease-in-out 1500ms 1500ms;
-}
-
-.place .menu .menu__part__dishes.delay-8 {
-  -webkit-animation: slideup ease-in-out 1500ms 1700ms;
-          animation: slideup ease-in-out 1500ms 1700ms;
+  white-space: nowrap;
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__description p {
@@ -354,10 +312,6 @@ footer li a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.place .menu .menu__part__dishes:hover .menu__part__block {
-  z-index: auto;
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__price {
@@ -379,11 +333,14 @@ footer li a {
 }
 
 .place .menu .menu__part__description {
-  font-size: 0.9rem;
-  line-height: 20px;
+  line-height: 15px;
   text-align: left;
   width: 250px;
-  margin: 15px 0 0 20px;
+  margin: 5px 0 0 16px;
+}
+
+.place .menu .menu__part__description h3 {
+  margin: 12px 0 7px 0;
 }
 
 .place .menu .menu__part__description p {
@@ -395,7 +352,7 @@ footer li a {
 }
 
 .place .menu .menu__part__price {
-  margin: 35px -40px 0 0;
+  margin: 35px -50px 0 0;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
@@ -643,14 +600,15 @@ input::placeholder {
 .restaurant .restaurant__card .icon.heart {
   margin-top: 15px;
   margin-right: 20px;
-  width: 20px;
+  width: 28px;
   fill: transparent;
   stroke-width: 35;
   stroke: black;
 }
 
-.restaurant .restaurant__card .icon.heart:hover {
-  fill: #9356DC;
+.restaurant .restaurant__card .icon.heart:hover path {
+  -webkit-animation: fillheart 2s linear forwards;
+          animation: fillheart 2s linear forwards;
 }
 
 .btn {
@@ -666,7 +624,9 @@ input::placeholder {
   -webkit-box-shadow: 1px 1px 5px black;
           box-shadow: 1px 1px 5px black;
   border: none;
+  line-height: 50px;
   cursor: pointer;
+  margin: auto;
 }
 
 .btn.btn-explore {
