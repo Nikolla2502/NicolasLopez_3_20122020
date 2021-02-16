@@ -16,9 +16,12 @@ $secondary-color:#FF79DA;
 .loader{
 
     position: absolute;
-    margin:5% 0 0 27%;    
+    margin-top: 20px;  
+    margin-left:28%;
+     
     
 }
+
 .loader_bars::before,
 .loader_bars::after,
 .loader_bars span,
@@ -34,8 +37,8 @@ $secondary-color:#FF79DA;
     width:20px;
     height:250px;
     background-color: $primary-color;
-    animation: grow 2s ease-in-out 4;
-    opacity:0;
+    // animation: grow 2s ease-in-out 4;
+    // opacity:0;
 }
 .loader_bars::after{
     left:25px;

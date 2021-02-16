@@ -14,15 +14,39 @@
 @keyframes opacitystart {
     0% {
         opacity: 0;
-
-    }
-    80% {
-        opacity: 0.5;
        
+    }
+    95%{
+        opacity:0;
     }
     100% {
         opacity: 1;
         
         
     }
+}
+@keyframes opacitystartlogo {
+    0% {
+        opacity: 0;
+    }
+    70%{
+        opacity:0.5;
+    }
+    100% {
+        opacity: 1;
+        
+        
+    }
+}
+@keyframes fillheart {
+    0%{
+        opacity:0;
+        
+    }
+    100%{
+        opacity:1;
+        
+        
+    }
+
 }

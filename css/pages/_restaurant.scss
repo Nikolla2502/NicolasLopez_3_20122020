@@ -24,12 +24,25 @@
             padding-left:60px;
             padding-right:10px;
             width:30px;
+            z-index:1;
+            fill:transparent;
+            scale:0;
+            & path:hover {
+            animation:fillheart 1s ease-in-out;
+            
+            fill: $primary-color;
+            
+            
+            }
+        }
+        .icon.heart1{
+            position:relative;
+            right:41px;
+            bottom:1px;
+            width:32px;
             fill:transparent;
             stroke-width:35;
             stroke: black;          
-            & path:hover {
-            fill:$primary-color; 
-            }
         }
         
     }
