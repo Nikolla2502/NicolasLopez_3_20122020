@@ -236,13 +236,13 @@ header {
 
 .header__restaurant .logo {
   padding: 0 0 0 8%;
-  height: 60%;
+  font-size: 4rem;
   -webkit-animation: none;
           animation: none;
 }
 
 .header__restaurant .arrow {
-  padding: 0 0 0 0;
+  padding: 20px 45px 0 0;
 }
 
 .header__restaurant .arrow .fas {
@@ -251,12 +251,9 @@ header {
 
 .logo {
   text-align: center;
+  font-size: 4rem;
   -webkit-animation: opacitystartlogo 8500ms ease-in-out;
           animation: opacitystartlogo 8500ms ease-in-out;
-}
-
-.logo img {
-  height: 60%;
 }
 
 footer {
@@ -311,31 +308,36 @@ footer li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+.place .place__name .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5%;
-  font-size: 1.5rem;
 }
 
-.place .place__name .icon.heart {
-  padding-left: 60px;
-  padding-right: 10px;
+.place .place__name .icon.heart-fill {
   width: 30px;
   z-index: 1;
   fill: transparent;
 }
 
-.place .place__name .icon.heart path:hover {
+.place .place__name .icon.heart-fill path:hover {
   -webkit-animation: fillheart 1s ease-in-out;
           animation: fillheart 1s ease-in-out;
   fill: #9356DC;
 }
 
-.place .place__name .icon.heart1 {
+.place .place__name .icon.heart-border {
   position: relative;
-  right: 41px;
-  bottom: 1px;
+  right: 31px;
   width: 32px;
   fill: transparent;
   stroke-width: 35;

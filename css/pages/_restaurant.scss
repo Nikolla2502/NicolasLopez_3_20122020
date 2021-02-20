@@ -17,12 +17,15 @@
   border-radius:40px 40px 0 0;
     .place__name{
         display:flex;
-        justify-content: center;
+        justify-content: space-around;
         padding-top:5%;
-        font-size:1.5rem;
-        .icon.heart{
-            padding-left:60px;
-            padding-right:10px;
+        font-size:2rem;
+        .icon{
+            display:flex;
+            justify-content: center;
+        }
+        .icon.heart-fill{
+            
             width:30px;
             z-index:1;
             fill:transparent;
@@ -35,10 +38,9 @@
             
             }
         }
-        .icon.heart1{
-            position:relative;
-            right:41px;
-            bottom:1px;
+        .icon.heart-border{
+          position:relative;
+          right:31px;
             width:32px;
             fill:transparent;
             stroke-width:35;
