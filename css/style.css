@@ -829,9 +829,9 @@ input::placeholder {
 
 /*#################################*\
 ####          Media querys       ####
-####            1024 px           #### 
+####            1124 px           #### 
 \*#################################*/
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1124px) {
   .index__img {
     width: 100%;
     height: 600px;
