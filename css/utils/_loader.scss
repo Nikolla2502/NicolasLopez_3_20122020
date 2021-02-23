@@ -39,7 +39,7 @@ $secondary-color:#FF79DA;
     width:20px;
     height:300px;
     background-color: $primary-color;
-    animation: grow 2s ease-in-out 4;
+    animation: grow 2s ease-in-out 2;
     opacity:0;
 }
 .loader_bars::after{

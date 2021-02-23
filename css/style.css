@@ -59,7 +59,7 @@
     opacity: 0;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -71,7 +71,7 @@
     opacity: 0;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -151,8 +151,8 @@
   width: 20px;
   height: 300px;
   background-color: #9356DC;
-  -webkit-animation: grow 2s ease-in-out 4;
-          animation: grow 2s ease-in-out 4;
+  -webkit-animation: grow 2s ease-in-out 2;
+          animation: grow 2s ease-in-out 2;
   opacity: 0;
 }
 
@@ -252,8 +252,8 @@ header {
 .logo {
   text-align: center;
   font-size: 4rem;
-  -webkit-animation: opacitystartlogo 8500ms ease-in-out;
-          animation: opacitystartlogo 8500ms ease-in-out;
+  -webkit-animation: opacitystartlogo 4s ease-in-out;
+          animation: opacitystartlogo 4s ease-in-out;
 }
 
 footer {
@@ -262,8 +262,8 @@ footer {
   height: 200px;
   padding: 30px 0 20px 0;
   line-height: 30px;
-  -webkit-animation: opacitystart 8500ms;
-          animation: opacitystart 8500ms;
+  -webkit-animation: opacitystart 3s;
+          animation: opacitystart 3s;
 }
 
 footer img {
@@ -534,8 +534,8 @@ footer li a {
   background-color: #eaeaea;
   -webkit-box-shadow: 5px 5px 10px;
           box-shadow: 5px 5px 10px;
-  -webkit-animation: opacitystart 8500ms;
-          animation: opacitystart 8500ms;
+  -webkit-animation: opacitystart 4s;
+          animation: opacitystart 4s;
 }
 
 #recherche .recherche_bloc {
@@ -584,8 +584,8 @@ input::placeholder {
 
 .explore {
   height: 285px;
-  -webkit-animation: opacitystart 8500ms;
-          animation: opacitystart 8500ms;
+  -webkit-animation: opacitystart 4s;
+          animation: opacitystart 4s;
   text-align: center;
   background-color: #f6f6f6;
   padding-top: 10px;
@@ -615,8 +615,8 @@ input::placeholder {
   height: 440px;
   text-align: left;
   margin-left: 10px;
-  -webkit-animation: opacitystart 8500ms;
-          animation: opacitystart 8500ms;
+  -webkit-animation: opacitystart 4s;
+          animation: opacitystart 4s;
 }
 
 .function .function__card {
@@ -689,8 +689,8 @@ input::placeholder {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-animation: opacitystart 8500ms;
-          animation: opacitystart 8500ms;
+  -webkit-animation: opacitystart 4s;
+          animation: opacitystart 4s;
 }
 
 .restaurant .restaurant__card {
@@ -829,12 +829,12 @@ input::placeholder {
 
 /*#################################*\
 ####          Media querys       ####
-####            1124 px           #### 
+####            1024 px           #### 
 \*#################################*/
-@media all and (min-width: 1124px) {
+@media all and (min-width: 1024px) {
   .index__img {
     width: 100%;
-    height: 600px;
+    height: 550px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -849,14 +849,6 @@ input::placeholder {
   }
   .place .menu .menu__part {
     margin-left: 15%;
-  }
-  .place .menu .menu__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .btn-command {
-    margin-top: 100px;
   }
 }
 

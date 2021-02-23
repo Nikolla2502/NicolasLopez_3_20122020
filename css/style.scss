@@ -55,13 +55,13 @@
 }
 /*#################################*\
 ####          Media querys       ####
-####            1124 px           #### 
+####            1024 px           #### 
 \*#################################*/
 
-@media all and (min-width: 1124px){
+@media all and (min-width: 1024px){
     .index__img{
         width:100%;
-        height:600px;
+        height:550px;
         object-fit: cover;
 
     }
@@ -76,15 +76,8 @@
     
     }
     
-    .place .menu .menu__items{
-        display:flex;
-        
-        
-    }
-    .btn-command{
-        margin-top:100px;
-        
-    }
+
+
 
 
 }
