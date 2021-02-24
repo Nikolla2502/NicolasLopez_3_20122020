@@ -126,6 +126,7 @@ input::placeholder{
         height:250px;
         width:335px;
         margin:10px 20px 10px 20px;
+        box-shadow:1px 1px 15px;
         border-radius:25px;
         text-align:left;
         img{
@@ -151,7 +152,9 @@ input::placeholder{
             width:75%;
             margin-left:10px;
             margin-top:10px;
-            line-height:20px;
+            line-height:25px;
+            font-size:1.2rem;
+            
         }
         .icon.heart{
             margin-top:15px;

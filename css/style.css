@@ -159,29 +159,29 @@
 .loader_bars::after {
   left: 25px;
   background-color: #FF79DA;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .loader_bars span {
   left: 50px;
   background-color: #9356DC;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .loader_bars span::before {
   left: 25px;
   background-color: #FF79DA;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .loader_bars span::after {
   left: 50px;
   background-color: #9356DC;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 /*#################################*\
@@ -295,7 +295,7 @@ footer li a {
 
 .place {
   Font-family: 'Shrikhand';
-  height: 1200px;
+  height: 1300px;
   width: 100%;
   text-align: center;
   background-color: #f6f6f6;
@@ -469,10 +469,9 @@ footer li a {
 
 .place .menu .menu__part__title p {
   margin-top: 0;
-}
-
-.place .menu .menu__part__title strong {
-  font-size: 1.1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .place .menu .checkbox {
@@ -482,7 +481,7 @@ footer li a {
 }
 
 .place .menu .menu__part__price {
-  margin: 35px -50px 0 0;
+  margin: 35px -95px 0 0;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
@@ -698,6 +697,8 @@ input::placeholder {
   height: 250px;
   width: 335px;
   margin: 10px 20px 10px 20px;
+  -webkit-box-shadow: 1px 1px 15px;
+          box-shadow: 1px 1px 15px;
   border-radius: 25px;
   text-align: left;
 }
@@ -732,7 +733,8 @@ input::placeholder {
   width: 75%;
   margin-left: 10px;
   margin-top: 10px;
-  line-height: 20px;
+  line-height: 25px;
+  font-size: 1.2rem;
 }
 
 .restaurant .restaurant__card .icon.heart {
@@ -848,7 +850,7 @@ input::placeholder {
             flex-direction: column;
   }
   .place .menu .menu__part {
-    margin-left: 15%;
+    margin-left: 25%;
   }
 }
 

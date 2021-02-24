@@ -8,7 +8,7 @@
 
 .place{
   Font-family:'Shrikhand';
-  height: 1200px;
+  height: 1300px;
   width:100%;
   text-align:center;
   background-color:$bg-color;
@@ -147,19 +147,21 @@
             
             p{
                 margin-top:0;
-                
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
             }
-            strong{
-            font-size:1.1rem;
-            }
+
 
         }
         .checkbox{
             display:flex;
+            
         }
         .menu__part__price{
-            margin:35px -50px 0 0;
+            margin:35px -95px 0 0;
             transition: transform 500ms;
+           
             
             
         }

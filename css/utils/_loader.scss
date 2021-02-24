@@ -45,23 +45,23 @@ $secondary-color:#FF79DA;
 .loader_bars::after{
     left:25px;
     background-color:$secondary-color;
-    animation-delay:0.2s;
+    animation-delay:0.1s;
 }
 .loader_bars span{
     left:50px;
     background-color: $primary-color;
-    animation-delay:0.4s ;
+    animation-delay:0.2s ;
 }
 
 .loader_bars span::before{
     left:25px;
     background-color:$secondary-color;
-    animation-delay:0.6s;
+    animation-delay:0.3s;
 }
 .loader_bars span::after{
     left:50px;
     background-color:$primary-color;
-    animation-delay:0.8s;
+    animation-delay:0.4s;
 }
 /*#################################*\
 ####          Media querys       ####
