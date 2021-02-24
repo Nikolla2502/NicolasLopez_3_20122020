@@ -36,7 +36,8 @@ input::placeholder{
     background-color:$bg-color;
     padding-top:10px;
     h1{
-    font-size:1.4em;    
+    font-size:1.4em;
+    padding:0 60px;    
     }
     p{
     font-size:1.4em;
@@ -89,17 +90,19 @@ input::placeholder{
 
     .function__card__number{
         background-color:$primary-color;
+        color:white;
         border-radius:30px;
         height:30px;
         width:30px;
         text-align:center;
-        line-height:30px;
+        line-height:32px;
         margin-top:25px;
         position:absolute;
         margin-right:330px;
     }
     .function__card__text{
         margin-right:40px;
+        font-weight:bold;
     }
 
     }

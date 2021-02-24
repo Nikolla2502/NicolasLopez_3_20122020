@@ -592,6 +592,7 @@ input::placeholder {
 
 .explore h1 {
   font-size: 1.4em;
+  padding: 0 60px;
 }
 
 .explore p {
@@ -655,11 +656,12 @@ input::placeholder {
 
 .function .function__card .function__card__number {
   background-color: #9356DC;
+  color: white;
   border-radius: 30px;
   height: 30px;
   width: 30px;
   text-align: center;
-  line-height: 30px;
+  line-height: 32px;
   margin-top: 25px;
   position: absolute;
   margin-right: 330px;
@@ -667,6 +669,7 @@ input::placeholder {
 
 .function .function__card .function__card__text {
   margin-right: 40px;
+  font-weight: bold;
 }
 
 /*#################################*\
