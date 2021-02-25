@@ -159,16 +159,31 @@ input::placeholder{
             font-size:1.2rem;
             
         }
-        .icon.heart{
-            margin-top:15px;
-            margin-right:20px;
-            width:28px;
+        .icon{
+            display:flex;
+            justify-content: center;
+        }
+        .icon.heart-fill{
+            
+            width:30px;
+            z-index:1;
+            fill:transparent;
+            
+            & path:hover {
+            animation:fillheart 1s ease-in-out;
+            
+            fill: $primary-color;
+            
+            
+            }
+        }
+        .icon.heart-border{
+          position:relative;
+          right:31px;
+            width:32px;
             fill:transparent;
             stroke-width:35;
-            stroke: black;
-            &:hover path{
-                fill:$primary-color;
-            }
+            stroke: black;          
         }
     }
 }

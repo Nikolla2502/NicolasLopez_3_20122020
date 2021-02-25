@@ -740,17 +740,34 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
-.restaurant .restaurant__card .icon.heart {
-  margin-top: 15px;
-  margin-right: 20px;
-  width: 28px;
+.restaurant .restaurant__card .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurant .restaurant__card .icon.heart-fill {
+  width: 30px;
+  z-index: 1;
+  fill: transparent;
+}
+
+.restaurant .restaurant__card .icon.heart-fill path:hover {
+  -webkit-animation: fillheart 1s ease-in-out;
+          animation: fillheart 1s ease-in-out;
+  fill: #9356DC;
+}
+
+.restaurant .restaurant__card .icon.heart-border {
+  position: relative;
+  right: 31px;
+  width: 32px;
   fill: transparent;
   stroke-width: 35;
   stroke: black;
-}
-
-.restaurant .restaurant__card .icon.heart:hover path {
-  fill: #9356DC;
 }
 
 .btn {
@@ -843,15 +860,6 @@ input::placeholder {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .place .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .place .menu .menu__part {
     margin-left: 25%;
   }
@@ -862,20 +870,24 @@ input::placeholder {
 ####            1440 px           #### 
 \*#################################*/
 @media all and (min-width: 1440px) {
-  .place .menu .menu__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: auto;
-  }
-  .place .menu .menu__items .menu__part__dishes {
-    margin: 15px;
-  }
   .btn-command {
     margin-top: 100px;
+  }
+  .place .menu .menu__part {
+    margin-left: 35%;
+  }
+}
+
+/*#################################*\
+####          Media querys       ####
+####            2560 px           #### 
+\*#################################*/
+@media all and (min-width: 2560px) {
+  .btn-command {
+    margin-top: 100px;
+  }
+  .place .menu .menu__part {
+    margin-left: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */

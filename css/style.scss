@@ -65,12 +65,7 @@
         object-fit: cover;
 
     }
-    .place .menu {
-        display:flex;
-        flex-direction:column;
-        
 
-    }
     .place .menu .menu__part{
        margin-left:25%;
     
@@ -88,16 +83,32 @@
 \*#################################*/
 
 @media all and (min-width: 1440px){
-    .place .menu .menu__items{
-        display:flex;
-        justify-content: space-between;
-        margin:auto;
-    }
-    .place .menu .menu__items .menu__part__dishes{
-        margin:15px;
-    }
+
     .btn-command{
         margin-top:100px;
         
     }
+    .place .menu .menu__part{
+        margin-left:35%;
+     
+     }
+     
+}
+
+/*#################################*\
+####          Media querys       ####
+####            2560 px           #### 
+\*#################################*/
+
+@media all and (min-width: 2560px){
+
+    .btn-command{
+        margin-top:100px;
+        
+    }
+    .place .menu .menu__part{
+        margin-left:40%;
+     
+     }
+     
 }
