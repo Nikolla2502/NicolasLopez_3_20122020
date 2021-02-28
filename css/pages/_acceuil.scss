@@ -70,7 +70,7 @@ input::placeholder{
     margin:auto;
     background-color:$bg-color;
     border-radius:20px;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 1px 1px 15px;
     line-height:75px;
     &:hover{
         
@@ -130,7 +130,7 @@ input::placeholder{
         width:335px;
         margin:10px 20px 10px 20px;
         box-shadow:1px 1px 15px;
-        border-radius:25px;
+        border-radius:20px;
         text-align:left;
         img{
             height:175px;
