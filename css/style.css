@@ -383,9 +383,9 @@ footer li a {
   height: 70px;
   width: 345px;
   background-color: white;
-  -webkit-box-shadow: 1px 1px 5px;
-          box-shadow: 1px 1px 5px;
   border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 15px #a5a5a5;
+          box-shadow: 1px 1px 15px #a5a5a5;
   margin: auto;
   margin-top: 15px;
   white-space: nowrap;
@@ -635,8 +635,8 @@ input::placeholder {
   margin: auto;
   background-color: #f6f6f6;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 1px 15px;
-          box-shadow: 1px 1px 15px;
+  -webkit-box-shadow: 1px 1px 15px #a5a5a5;
+          box-shadow: 1px 1px 15px #a5a5a5;
   line-height: 75px;
 }
 
@@ -700,9 +700,9 @@ input::placeholder {
   height: 250px;
   width: 335px;
   margin: 10px 20px 10px 20px;
-  -webkit-box-shadow: 1px 1px 15px;
-          box-shadow: 1px 1px 15px;
   border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 15px #a5a5a5;
+          box-shadow: 1px 1px 15px #a5a5a5;
   text-align: left;
 }
 
@@ -780,8 +780,8 @@ input::placeholder {
   height: 50px;
   width: 220px;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  -webkit-box-shadow: 1px 1px 15px #a5a5a5;
+          box-shadow: 1px 1px 15px #a5a5a5;
   border: none;
   line-height: 50px;
   cursor: pointer;

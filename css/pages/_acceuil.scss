@@ -69,8 +69,8 @@ input::placeholder{
     width:325px;
     margin:auto;
     background-color:$bg-color;
-    border-radius:20px;
-    box-shadow: 1px 1px 15px;
+    @include box-border-radius;
+    @include box-shadow;
     line-height:75px;
     &:hover{
         
@@ -129,8 +129,8 @@ input::placeholder{
         height:250px;
         width:335px;
         margin:10px 20px 10px 20px;
-        box-shadow:1px 1px 15px;
-        border-radius:20px;
+        @include box-border-radius;
+        @include box-shadow;
         text-align:left;
         img{
             height:175px;
