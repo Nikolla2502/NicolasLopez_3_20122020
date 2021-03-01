@@ -31,5 +31,11 @@
 .btn-command{
     margin-top:40px;
     animation: opacitystart 3s;
+    @include  lg_desktop{
+    margin-top:80px;
+    }    
+    @include xlg_desktop{
+    margin-top:90px;    
+    }
 }
 

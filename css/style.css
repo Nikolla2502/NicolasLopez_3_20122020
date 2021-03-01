@@ -284,13 +284,31 @@ footer li a {
   color: white;
 }
 
-.index__img {
+.restaurant__img {
   width: 100%;
   height: 255px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
   top: 40px;
+}
+
+@media (min-width: 768px) {
+  .restaurant__img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant__img {
+    width: 100%;
+    height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .place {
@@ -314,6 +332,14 @@ footer li a {
   font-size: 2rem;
 }
 
+@media (min-width: 1024px) {
+  .place .place__name {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .place .place__name .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,6 +347,18 @@ footer li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .place .place__name .icon {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .place .place__name .icon {
+    margin-left: 30px;
+  }
 }
 
 .place .place__name .icon.heart-fill {
@@ -362,6 +400,30 @@ footer li a {
   text-align: left;
   -webkit-animation: opacitystart 2500ms;
           animation: opacitystart 2500ms;
+}
+
+@media (min-width: 768px) {
+  .place .menu .menu__part {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .place .menu .menu__part {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .place .menu .menu__part {
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .place .menu .menu__part {
+    margin-left: 40%;
+  }
 }
 
 .place .menu .menu__part::after {
@@ -619,6 +681,12 @@ input::placeholder {
           animation: opacitystart 4s;
 }
 
+@media (min-width: 768px) {
+  .function h1 {
+    margin-left: 50px;
+  }
+}
+
 .function .function__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,6 +763,30 @@ input::placeholder {
           animation: opacitystart 4s;
 }
 
+@media (min-width: 768px) {
+  .restaurant {
+    height: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  .restaurant .restaurant__choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1024px;
+  }
+}
+
 .restaurant .restaurant__card {
   background-color: white;
   height: 250px;
@@ -704,6 +796,12 @@ input::placeholder {
   -webkit-box-shadow: 1px 1px 15px #a5a5a5;
           box-shadow: 1px 1px 15px #a5a5a5;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .restaurant .restaurant__card {
+    margin: 30px 20px 30px 20px;
+  }
 }
 
 .restaurant .restaurant__card img {
@@ -809,85 +907,15 @@ input::placeholder {
           animation: opacitystart 3s;
 }
 
-/*#################################*\
-####          Media querys       ####
-####            768 px           #### 
-\*#################################*/
-@media all and (min-width: 767px) {
-  .index__img {
-    width: 100%;
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .place .menu .menu__part {
-    margin-left: 15%;
-  }
-  .restaurant {
-    height: 800px;
-  }
-  .restaurant .restaurant__card {
-    margin: 30px 20px 30px 20px;
-  }
-  .restaurant__choice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 1024px;
-  }
-  .function h1 {
-    margin-left: 50px;
-  }
-}
-
-/*#################################*\
-####          Media querys       ####
-####            1024 px           #### 
-\*#################################*/
-@media all and (min-width: 1024px) {
-  .index__img {
-    width: 100%;
-    height: 550px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .place .menu .menu__part {
-    margin-left: 25%;
-  }
-}
-
-/*#################################*\
-####          Media querys       ####
-####            1440 px           #### 
-\*#################################*/
-@media all and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .btn-command {
-    margin-top: 100px;
-  }
-  .place .menu .menu__part {
-    margin-left: 35%;
+    margin-top: 80px;
   }
 }
 
-/*#################################*\
-####          Media querys       ####
-####            2560 px           #### 
-\*#################################*/
-@media all and (min-width: 2560px) {
+@media (min-width: 2560px) {
   .btn-command {
-    margin-top: 100px;
-  }
-  .place .menu .menu__part {
-    margin-left: 40%;
+    margin-top: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */

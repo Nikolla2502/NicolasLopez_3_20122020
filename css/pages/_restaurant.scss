@@ -1,9 +1,19 @@
-.index__img{
+.restaurant__img{
     width:100%;
     height:255px;
     object-fit: cover;
     position:relative;
     top:40px;
+    @include tablet{
+        width:100%;
+        height:400px;
+        object-fit: cover;
+    }
+    @include desktop{
+        width:100%;
+        height:550px;
+        object-fit: cover;
+    }
 }
 
 .place{
@@ -20,9 +30,18 @@
         justify-content: space-around;
         padding-top:5%;
         font-size:2rem;
+            @include desktop{
+            justify-content: center;
+            }
         .icon{
             display:flex;
             justify-content: center;
+            @include desktop{
+                margin-left:20px;
+            }
+            @include lg_desktop{
+                margin-left:30px;
+            }
         }
         .icon.heart-fill{
             
@@ -58,6 +77,18 @@
         margin-left:5%;
         text-align: left;
         animation: opacitystart 2500ms;
+            @include tablet{
+            margin-left:15%;
+            }
+            @include desktop{
+            margin-left:25%;
+            }
+            @include lg_desktop{
+            margin-left:35%;
+            }
+            @include lg_desktop{
+            margin-left:40%;
+            }
         }
         .menu__part::after{
             content:"";

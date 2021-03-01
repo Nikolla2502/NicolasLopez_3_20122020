@@ -57,10 +57,14 @@ input::placeholder{
     display:flex;
     flex-direction:column;
     height:440px;
-    
     text-align:left;
     margin-left:10px;
     animation: opacitystart 4s;
+    h1{
+    @include tablet{
+    margin-left:50px;
+    }
+    }
     .function__card{
     display:flex;
     flex-direction:row;
@@ -124,6 +128,18 @@ input::placeholder{
     align-items: center;
     text-align:center;
     animation: opacitystart 4s;
+    @include tablet{
+        height:800px;
+    }
+    .restaurant__choice{
+    @include tablet{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: center;
+        max-width:1024px;    
+    }
+    }
     .restaurant__card{
         background-color:$bg-card;
         height:250px;
@@ -132,6 +148,9 @@ input::placeholder{
         @include box-border-radius;
         @include box-shadow;
         text-align:left;
+        @include tablet{
+        margin:30px 20px 30px 20px;
+        }
         img{
             height:175px;
             width:335px;
