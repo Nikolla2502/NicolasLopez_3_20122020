@@ -1,0 +1,20 @@
+{
+  "name": "nicolaslopez_3_20122020",
+  "version": "1.0.0",
+  "description": "Realisation du site ohmyfood pour la reservation en ligne de plats dans les restaurants proposés",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css--use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolla2502/NicolasLopez_3_20122020.git"
+  },
+  "author": "Nicolas Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikolla2502/NicolasLopez_3_20122020/issues"
+  },
+  "homepage": "https://github.com/Nikolla2502/NicolasLopez_3_20122020#readme"
+}
