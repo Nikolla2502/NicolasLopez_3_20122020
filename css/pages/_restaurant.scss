@@ -37,10 +37,10 @@
             display:flex;
             justify-content: center;
             @include desktop{
-                margin-left:20px;
+                margin-left:40px;
             }
             @include lg_desktop{
-                margin-left:30px;
+                margin-left:50px;
             }
         }
         .icon.heart-fill{
@@ -52,7 +52,7 @@
             & path:hover {
             animation:fillheart 1s ease-in-out;
             
-            fill: $primary-color;
+            fill: url(#heart_degrade);
             
             
             }
@@ -60,10 +60,16 @@
         .icon.heart-border{
           position:relative;
           right:31px;
-            width:32px;
-            fill:transparent;
-            stroke-width:35;
-            stroke: black;          
+            @include desktop{
+            right:71px;
+            }
+            @include lg_desktop{
+            right:81px;
+            }
+          width:32px;
+          fill:transparent;
+          stroke-width:35;
+          stroke: black;          
         }
         
     }
@@ -103,6 +109,9 @@
         justify-content:space-between;
         height: 70px;
         width: 345px;
+        @include tablet{
+        width: 500px;
+        }
         background-color:$bg-card;
         @include box-border-radius;
         @include box-shadow;
@@ -137,14 +146,16 @@
             &:hover{
                 .menu__part__title{
                     & h3{
-                    overflow:hidden;
-                    white-space:nowrap;
                     text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    
+                    
                     }
                     & p{
-                        overflow:hidden;
-                        white-space:nowrap;
-                        text-overflow:ellipsis;
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
                          
                     } 
                 } 
@@ -152,7 +163,7 @@
                  
              
                 .menu__part__price{
-                    transform: translateX(-55px,);
+                    transform: translateX(-60px,);
                        
                                
                 }
@@ -170,7 +181,7 @@
         .menu__part__title{
             line-height:15px;
             text-align: left;
-            width:250px;
+            width:300px;
             margin:5px 0 0 10px;
             h3{
                 margin:12px 0 7px 0;
@@ -190,15 +201,18 @@
             
         }
         .menu__part__price{
-            margin:35px -95px 0 0;
+            margin:35px -55px 0 0;
             transition: transform 500ms;
-           
+            @include tablet{
+            margin:35px -180px 0 0;
+            }
             
             
         }
         .menu__part__check{
             height: 70px;
             width:70px;
+            
             border-radius:0 20px 20px 0;
             transform-origin: right;
             transform: scaleX(0);
@@ -209,6 +223,7 @@
         .fa-check-circle{
             color:white;
             font-size:2rem;
+            margin-left:1px;
             display: flex;
             align-items: center;
             justify-content: center;
