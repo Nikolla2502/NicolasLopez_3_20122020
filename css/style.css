@@ -266,6 +266,30 @@ footer {
           animation: opacitystart 3s;
 }
 
+@media (min-width: 768px) {
+  footer {
+    padding: 30px 0 20px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 30px 0 20px 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 30px 0 20px 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 30px 0 20px 220px;
+  }
+}
+
 footer img {
   width: 120px;
   padding-left: 40px;
@@ -709,6 +733,24 @@ input::placeholder {
 @media (min-width: 768px) {
   .function h1 {
     margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .function h1 {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .function h1 {
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .function h1 {
+    margin-left: 350px;
   }
 }
 

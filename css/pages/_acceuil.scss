@@ -64,6 +64,15 @@ input::placeholder{
     @include tablet{
     margin-left:50px;
     }
+    @include desktop{
+    margin-left:150px;
+    }
+    @include lg_desktop{
+    margin-left:250px;
+    }
+    @include xlg_desktop{
+    margin-left:350px;
+    }
     }
     .function__card{
     display:flex;
