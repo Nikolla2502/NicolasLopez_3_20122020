@@ -452,13 +452,7 @@ footer li a {
 
 @media (min-width: 1440px) {
   .place .menu .menu__part {
-    margin-left: 35%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .place .menu .menu__part {
-    margin-left: 40%;
+    margin-left: 30%;
   }
 }
 
@@ -568,12 +562,14 @@ footer li a {
 
 .place .menu .menu__part__title h3 {
   margin: 12px 0 7px 0;
+  line-height: 1.3rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .place .menu .menu__part__title p {
+  line-height: 1.3rem;
   margin-top: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -972,13 +968,13 @@ input::placeholder {
 
 @media (min-width: 1440px) {
   .btn-command {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 
 @media (min-width: 2560px) {
   .btn-command {
-    margin-top: 90px;
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

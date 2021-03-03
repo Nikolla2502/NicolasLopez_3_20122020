@@ -32,10 +32,10 @@
     margin-top:40px;
     animation: opacitystart 3s;
     @include  lg_desktop{
-    margin-top:80px;
+    margin-top:50px;
     }    
     @include xlg_desktop{
-    margin-top:90px;    
+    margin-top:40px;    
     }
 }
 
