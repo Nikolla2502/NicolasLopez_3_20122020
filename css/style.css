@@ -486,7 +486,6 @@ footer li a {
           box-shadow: 1px 1px 15px #a5a5a5;
   margin: auto;
   margin-top: 15px;
-  white-space: nowrap;
   -webkit-animation: slideup ease-in-out 1500ms 100ms;
           animation: slideup ease-in-out 1500ms 100ms;
 }
@@ -563,12 +562,15 @@ footer li a {
 .place .menu .menu__part__title {
   line-height: 15px;
   text-align: left;
-  width: 300px;
+  width: 80%;
   margin: 5px 0 0 10px;
 }
 
 .place .menu .menu__part__title h3 {
   margin: 12px 0 7px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .place .menu .menu__part__title p {
@@ -576,12 +578,6 @@ footer li a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.place .menu .checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .place .menu .menu__part__price {
@@ -594,7 +590,7 @@ footer li a {
 
 @media (min-width: 768px) {
   .place .menu .menu__part__price {
-    margin: 35px -180px 0 0;
+    margin: 35px -100px 0 0;
   }
 }
 

@@ -117,7 +117,6 @@
         @include box-shadow;
         margin:auto;
         margin-top:15px;
-        white-space:nowrap;
         animation: slideup ease-in-out 1500ms 100ms;
             &.delay-1{
                 animation: slideup ease-in-out 1500ms 300ms;
@@ -144,6 +143,7 @@
                 animation: slideup ease-in-out 1500ms 1700ms;
             }
             &:hover{
+                
                 .menu__part__title{
                     & h3{
                     text-overflow:ellipsis;
@@ -163,8 +163,8 @@
                  
              
                 .menu__part__price{
-                    transform: translateX(-60px,);
-                       
+                    transform: translateX(-60px);
+                      
                                
                 }
                 .menu__part__check{
@@ -181,10 +181,13 @@
         .menu__part__title{
             line-height:15px;
             text-align: left;
-            width:300px;
+            width:80%;
             margin:5px 0 0 10px;
             h3{
                 margin:12px 0 7px 0;
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
             }
             
             p{
@@ -196,15 +199,12 @@
 
 
         }
-        .checkbox{
-            display:flex;
-            
-        }
+        
         .menu__part__price{
             margin:35px -55px 0 0;
             transition: transform 500ms;
             @include tablet{
-            margin:35px -180px 0 0;
+            margin:35px -100px 0 0;
             }
             
             
