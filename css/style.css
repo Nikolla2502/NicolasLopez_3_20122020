@@ -221,7 +221,6 @@ a {
 
 header {
   height: 65px;
-  padding: 40px 0;
 }
 
 .header__restaurant {
@@ -235,23 +234,23 @@ header {
 }
 
 .header__restaurant .logo {
-  padding: 0 0 0 8%;
-  font-size: 4rem;
+  padding: 2px 0 0 8%;
   -webkit-animation: none;
           animation: none;
 }
 
 .header__restaurant .arrow {
-  padding: 20px 45px 0 0;
+  padding: 18px 25px 0 0;
 }
 
 .header__restaurant .arrow .fas {
-  font-size: 250%;
+  font-size: 200%;
 }
 
 .logo {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  padding-top: 5px;
   -webkit-animation: opacitystartlogo 4s ease-in-out;
           animation: opacitystartlogo 4s ease-in-out;
 }
@@ -313,8 +312,6 @@ footer li a {
   height: 255px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -337,13 +334,21 @@ footer li a {
 
 .place {
   Font-family: 'Shrikhand';
-  height: 1300px;
+  height: 1200px;
   width: 100%;
   text-align: center;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
   position: relative;
+  bottom: 45px;
+  margin-bottom: -45px;
   border-radius: 40px 40px 0 0;
+}
+
+@media (min-width: 1440px) {
+  .place {
+    height: 1300px;
+  }
 }
 
 .place .place__name {
@@ -465,6 +470,10 @@ footer li a {
   margin-top: 3px;
 }
 
+.place .menu .menu__items {
+  margin-bottom: 25px;
+}
+
 .place .menu .menu__part__dishes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,14 +541,28 @@ footer li a {
 
 .place .menu .menu__part__dishes:hover .menu__part__title h3 {
   text-overflow: ellipsis;
+  width: 220px;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .place .menu .menu__part__dishes:hover .menu__part__title h3 {
+    width: 300px;
+  }
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__title p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .place .menu .menu__part__dishes:hover .menu__part__title p {
+    width: 300px;
+  }
 }
 
 .place .menu .menu__part__dishes:hover .menu__part__price {
@@ -826,7 +849,6 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   -webkit-animation: opacitystart 4s;
           animation: opacitystart 4s;
 }
@@ -970,20 +992,32 @@ input::placeholder {
 }
 
 .btn-command {
-  margin-top: 40px;
+  margin-top: 25px;
   -webkit-animation: opacitystart 3s;
           animation: opacitystart 3s;
 }
 
+@media (min-width: 768px) {
+  .btn-command {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-command {
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 1440px) {
   .btn-command {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
 @media (min-width: 2560px) {
   .btn-command {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

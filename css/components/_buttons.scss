@@ -29,13 +29,19 @@
 
 }
 .btn-command{
-    margin-top:40px;
+    margin-top:25px;
     animation: opacitystart 3s;
+    @include  tablet{
+    margin-top:20px;
+    }
+    @include  desktop{
+    margin-top:10px;
+    }
     @include  lg_desktop{
-    margin-top:50px;
+    margin-top:40px;
     }    
     @include xlg_desktop{
-    margin-top:40px;    
+    margin-top:0px;    
     }
 }
 
