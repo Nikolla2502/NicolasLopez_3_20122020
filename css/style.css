@@ -553,6 +553,15 @@ footer li a {
   opacity: 1;
 }
 
+.place .menu .menu__part__dishes:hover .fa-check-circle:before {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
 .place .menu .menu__part__title {
   line-height: 15px;
   text-align: left;

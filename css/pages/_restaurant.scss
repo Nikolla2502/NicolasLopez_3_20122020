@@ -143,14 +143,14 @@
             &:hover{
                 
                 .menu__part__title{
-                    & h3{
+                    h3{
                     text-overflow:ellipsis;
                     white-space:nowrap;
                     overflow:hidden;
                     
                     
                     }
-                    & p{
+                    p{
                     text-overflow:ellipsis;
                     white-space:nowrap;
                     overflow:hidden;
@@ -169,13 +169,16 @@
                     transform: scaleX(1);
                     opacity: 1;
                 }  
+                .fa-check-circle:before{
+                    transform: rotate(360deg);
+                    transition: transform 500ms ease-in-out;
+                }
                
 
                     
             }
         }
         
-
         .menu__part__title{
             line-height:15px;
             text-align: left;
@@ -231,6 +234,7 @@
             height: 70px;
             width:70px;
             border-radius:0 20px 20px 0;
+            
         }
  
     }    
