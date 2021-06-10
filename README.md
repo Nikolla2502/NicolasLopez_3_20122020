@@ -1,5 +1,5 @@
 Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif est d'intégrer la maquette d'un site  de commande de repas en ligne nommé "Ohmyfood!".
-<div class="maquettes"><img src="https://github.com/Nikolla2502/NicolasLopez_3_20122020/blob/master/images/Accueil.png"><img src="https://github.com/Nikolla2502/NicolasLopez_3_20122020/blob/master/images/Menu%20-%20A%CC%80%20la%20franc%CC%A7aise.png">
+<div class="maquettes" style="border:2px solid black"><img src="https://github.com/Nikolla2502/NicolasLopez_3_20122020/blob/master/images/Accueil.png"><img src="https://github.com/Nikolla2502/NicolasLopez_3_20122020/blob/master/images/Menu%20-%20A%CC%80%20la%20franc%CC%A7aise.png">
 <h1>Éléments fournis par l'entreprise virtuelle.</h1>
 Seule la maquette de la version mobile nous est imposée , la version tablette et desktop est libre et doit bien sùr ètre coherente avec le projet du site.<br/>
 Les icones proviennent de Font Awesome.<br/>
